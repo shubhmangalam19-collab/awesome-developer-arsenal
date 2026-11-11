@@ -1,0 +1,43 @@
+name: 💡 Propose a New Resource
+description: Suggest a developer tool, free tier, or cheatsheet for the arsenal.
+title: "[Suggestion]: "
+labels: ["resource-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping expand the Awesome Developer Arsenal! Please fill out the details below.
+  - type: input
+    id: tool-name
+    attributes:
+      label: Resource / Tool Name
+      placeholder: e.g., Neon Postgres
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official Website / Repo URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Hosting & Compute
+        - Databases & Storage
+        - Authentication & User Management
+        - AI & LLM Inference APIs
+        - Terminal & Productivity Utilities
+        - UI Components & Design Systems
+        - System Design / Cheatsheet
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Why does it belong in the arsenal?
+      placeholder: Describe its generous free tier or unique developer benefit.
+    validations:
+      required: true
