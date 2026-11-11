@@ -1,0 +1,22 @@
+# ========================================================
+# SECURITY & SECRETS PREVENTION
+# ========================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+*.credentials
+credentials.json
+service_account.json
+.npmrc
+.pypirc
+
+# OS & Build
+Thumbs.db
+Desktop.ini
+.DS_Store
+node_modules/
+dist/
+build/
